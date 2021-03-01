@@ -1,6 +1,6 @@
 # rbl2gif
 
-This is a simple program to convert the label templates included with the Piano Roll LabelMaker in the RBL format to GIF files that can be used in other image editing programs.  The RBL format is a simple obfuscation of the GIF89 format, replacing the GIF89 file tag with PRBLM and shifting all bytes (excepting the final two) up by 0x01, rolling over 0xff to 0x00.  This program returns the file tag to the correct value and shifts the bits back to the correct values.
+This is a simple program to convert the label templates included with the Piano Roll LabelMaker in the RBL format to GIF files that can be used in other image editing programs.  The RBL format is a trivial obfuscation of the GIF89 format, replacing the GIF89 file tag with PRBLM and shifting all bytes (excepting the final two) up by 0x01, rolling over 0xff to 0x00.  This program returns the file tag to the correct value and shifts the bits back to the correct values.
 
 Usage:  rbl2gif.py \<infile\> \<outfile\>
 
