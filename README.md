@@ -3,9 +3,11 @@
 This is a simple program to convert the label templates included with the Piano Roll LabelMaker in the RBL format to GIF files that can be used in other image editing programs.  The RBL format is a trivial obfuscation of the GIF89 format, replacing the GIF89 file tag with PRBLM and shifting all bytes (excepting the final two) up by 0x01, rolling over 0xff to 0x00.  This program returns the file tag to the correct value and shifts the bits back to the correct values.
 
 Python version:
+
   usage:  rbl2gif.py [-h] \<infile\> \<outfile\>
   
 c++ version:
+
   usage: rbl2gif.exe [-h] \<infile\> \<outfile\>
 
   The \<infile\> must exist, and cannot be the same value as \<outfile\>.  If \<outfile\> does not end in .gif, a warning will be generated, but the conversion will proceed.  The program doesn't check for a valid RBL file, and will apply the conversion to any input file.  Obviously this will result in a useless output file if anything but a valid RBL file is input.  
