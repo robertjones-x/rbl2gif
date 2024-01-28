@@ -5,12 +5,14 @@ This is a simple program to convert label templates included with the Piano Roll
 Python version:
 
   usage:  rbl2gif.py [-h] \<infile\> \<outfile\>
+
           gif2rbl.py [-h] \<infile\> \<outfile\>
   
 c++ version:
 
   usage: rbl2gif.exe [-h] \<infile\> \<outfile\>
-        gif2rbl.exe [-h] \<infile\> \<outfile\>
+
+         gif2rbl.exe [-h] \<infile\> \<outfile\>
 
   The \<infile\> must exist, and cannot be the same value as \<outfile\>.  If \<outfile\> does not end in .gif for rbl2gif or .rbl for gif2rbl, a warning will be generated, but the conversion will proceed.  The program doesn't check for a valid file, and will apply the conversion to any input file.  Obviously this will result in a useless output file if anything but a valid RBL or GIF file is input.  
 
